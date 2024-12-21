@@ -1,0 +1,50 @@
+PS C:\Users\Dhanush Gowda D.P\OneDrive\Desktop\Chat Component Box>
+cd group-chat-app
+PS C:\Users\Dhanush Gowda D.P\OneDrive\Desktop\Chat Component Box\group-chat-app> npm init -y
+npm : File C:\Program Files\nodejs\npm.ps1 cannot be loaded because running scripts is disabled on this system. For more information, see 
+about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170.
+At line:1 char:1
++ npm init -y
++ ~~~
+    + CategoryInfo          : SecurityError: (:) [], PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+PS C:\Users\Dhanush Gowda D.P\OneDrive\Desktop\Chat Component Box\group-chat-app> Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+PS C:\Users\Dhanush Gowda D.P\OneDrive\Desktop\Chat Component Box\group-chat-app> npm init -y
+Wrote to C:\Users\Dhanush Gowda D.P\OneDrive\Desktop\Chat Component Box\group-chat-app\package.json:
+
+{
+  "name": "group-chat-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {},
+  "description": ""
+}
+
+
+
+PS C:\Users\Dhanush Gowda D.P\OneDrive\Desktop\Chat Component Box\group-chat-app> npm install express socket.io
+
+up to date, audited 92 packages in 3s
+
+14 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Users\Dhanush Gowda D.P\OneDrive\Desktop\Chat Component Box\group-chat-app> node server.js
+Server running on http://localhost:3000
+A user connected
+A user connected
+A user disconnected
+A user connected
+A user connected
